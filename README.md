@@ -25,7 +25,9 @@ The dataset consists of a collection of SMS messages labeled as "spam" or "ham".
 
 ## Downloading the Dataset
 The dataset is downloaded and extracted using the following function:
+```python
 download_and_unzip_spam_data(url, zip_path, extracted_path, data_file_path)
+```
 
 ## Model Architecture
 The model is based on the GPT architecture and includes:
@@ -40,7 +42,9 @@ the final output representations (logits) from the transformer blocks.
 
 ## Training the Model
 The model is trained using the following function:
+```python
 train_classifier_simple(model, train_loader, val_loader, optimizer, device, num_epochs, eval_freq, eval_iter)
+```
 
 ## Parameters
 model: The GPT model instance.
@@ -54,15 +58,21 @@ eval_iter: Number of iterations for evaluation.
 
 ## Evaluation
 The model's performance can be evaluated using the following function:
+```python
 calc_accuracy_loader(data_loader, model, device, num_batches=None)
+```
 
 ## Inference
 To classify a new text message, use the classify_review function:
+```python
 classify_review(text, model, tokenizer, device, max_length=None, pad_token_id=50256)
+```
 
 ## Visualization
 Training and validation losses are plotted using Matplotlib:
+```python
 plot_values(epochs_seen, examples_seen, train_losses, val_losses)
+```
 ![WhatsApp Image 2025-03-10 at 21 32 36](https://github.com/user-attachments/assets/b4637b38-7c0f-4241-b388-8f4a25e85741)
 
 

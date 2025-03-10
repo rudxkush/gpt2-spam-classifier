@@ -4,10 +4,10 @@ The model has been developed from scratch, incorporating various components of a
 This README provides an overview of the project's structure, setup instructions, and usage guidelines.
 
 ## Features:
-Custom Implementation - All components of the model, including the tokenizer, attention mechanism, and dataset handling, are implemented from scratch.
-Spam Classification - The model is trained to classify text messages as either "spam" or "ham" (not spam).
-Data Handling - The project includes functionality to download and preprocess the SMS Spam Collection dataset.
-Visualization - Training and validation losses are plotted for analysis.
+Custom Implementation - All components of the model, including the tokenizer, attention mechanism, and dataset handling, are implemented from scratch.<br>
+Spam Classification - The model is trained to classify text messages as either "spam" or "ham" (not spam).<br>
+Data Handling - The project includes functionality to download and preprocess the SMS Spam Collection dataset.<br>
+Visualization - Training and validation losses are plotted for analysis.<br>
 
 ## Requirements:
 Python 3.7 or higher
@@ -34,11 +34,11 @@ The model is based on the GPT architecture and includes:
 ![Total number of parameters](https://github.com/user-attachments/assets/b19af62b-82c1-434e-9afe-a2cd107f0c04)
 
 Tokenization: Uses the tiktoken library for encoding text.
-Embedding Layers: Token and position embeddings are implemented.
-Transformer Blocks: Multiple transformer blocks for attention mechanisms.
-Feed Forward Neural Networks: For processing the outputs of the attention layers.
+Embedding Layers: Token and position embeddings are implemented.<br>
+Transformer Blocks: Multiple transformer blocks for attention mechanisms.<br>
+Feed Forward Neural Networks: For processing the outputs of the attention layers.<br>
 Output Layer: A neural network on top of the output layer classifies the input text as spam or not spam by analyzing 
-the final output representations (logits) from the transformer blocks.
+the final output representations (logits) from the transformer blocks.<br>
 
 ## Training the Model
 The model is trained using the following function:
@@ -47,14 +47,14 @@ train_classifier_simple(model, train_loader, val_loader, optimizer, device, num_
 ```
 
 ## Parameters
-model: The GPT model instance.
-train_loader: DataLoader for training data.
-val_loader: DataLoader for validation data.
-optimizer: Optimizer for model training.
-device: Device to run the model (CPU or GPU).
-num_epochs: Number of training epochs.
-eval_freq: Frequency of evaluation during training.
-eval_iter: Number of iterations for evaluation.
+model: The GPT model instance.<br>
+train_loader: DataLoader for training data.<br>
+val_loader: DataLoader for validation data.<br>
+optimizer: Optimizer for model training.<br>
+device: Device to run the model (CPU or GPU).<br>
+num_epochs: Number of training epochs.<br>
+eval_freq: Frequency of evaluation during training.<br>
+eval_iter: Number of iterations for evaluation.<br>
 
 ## Evaluation
 The model's performance can be evaluated using the following function:

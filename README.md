@@ -80,3 +80,6 @@ plot_values(epochs_seen, examples_seen, train_losses, val_losses)
 This project implements a spam classification model using a custom language model architecture. 
 It focuses on understanding transformer mechanisms and lays the groundwork for further exploration in 
 natural language processing, such as top-k sampling, temperature scaling, and multimodality.
+
+## Reference
+[Build a Large Language Model (From Scratch)]([https://sebastianraschka.com/books/](https://www.manning.com/books/build-a-large-language-model-from-scratch?utm_source=raschka&utm_medium=affiliate&utm_campaign=book_raschka_build_12_12_23&a_aid=raschka&a_bid=4c2437a0&chan=mm_website))
